@@ -268,8 +268,7 @@ class SodukuSolver:
 file = 's2'
 s = SodukuSolver(9,'testCases/{}.txt'.format(file))
 start = time()
-# s.solveCSP(s.getNextDegreeHeuristic)
-# s.solveSimpleBackTracking()
+
 s.solveCSPFH()
 end = time()
 print(s)
